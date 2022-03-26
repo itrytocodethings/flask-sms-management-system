@@ -11,7 +11,7 @@ def sendSMS(body='body', to="to"):
 
     message = client.messages.create(
                                 body=body,
-                                from_='+18644005130',
+                                from_=os.environ['FROM_PHONE'],
                                 to=to
                             )
 
